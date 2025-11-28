@@ -79,7 +79,7 @@ jobs:
         run: git push
 
       - name: Deploy public playlists to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.1.1
+        uses: JamesIves/github-pages-deploy-action@v4.7.3
         if: github.ref == 'refs/heads/master'
         with:
           repository-name: caliph21/iptv  # 改为你的 fork 仓库
@@ -103,3 +103,4 @@ jobs:
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to caliph21/api'
           clean: false
+
